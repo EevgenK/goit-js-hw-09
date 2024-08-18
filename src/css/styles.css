@@ -1,3 +1,16 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+ul {
+  list-style: none;
+}
 :root {
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --animation-duration: 250ms;
@@ -28,4 +41,57 @@
   display: block;
   height: 100%;
   cursor: zoom-in;
+}
+/* FEEDBACK FORM */
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 408px;
+  padding: 24px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  gap: 24px;
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.feedback-form button {
+  color: #ffffff;
+  width: 95px;
+  padding: 8px 16px;
+  background-color: #4e75ff;
+  border-radius: 8px;
+  font: inherit;
+  cursor: pointer;
+  border-color: #4e75ff;
+  font-weight: 500;
+}
+.feedback-form button:focus,
+.feedback-form button:hover {
+  background-color: #6c8cff;
+}
+
+input,
+textarea {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font: inherit;
+  border: 1px solid #808080;
+}
+textarea:hover,
+input:hover {
+  border: 1px solid #000000;
+}
+textarea:focus,
+input:focus {
+  border: inherit;
+  outline: 1px solid #808080;
+}
+textarea {
+  resize: none;
 }
