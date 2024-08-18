@@ -29,14 +29,13 @@ const onHandleSubmit = e => {
     alert('Fill please all fields');
     return;
   }
-  console.log('1-', formData);
+  console.log(formData);
   localStorage.removeItem('feedback-form-state');
   formData.email = '';
   formData.message = '';
   render();
-  console.log('2-', formData);
 };
 
 render();
-form.addEventListener('input', throttle(onHandleInput, 500));
+form.addEventListener('input', throttle(onHandleInput, 1000));
 form.addEventListener('submit', onHandleSubmit);
